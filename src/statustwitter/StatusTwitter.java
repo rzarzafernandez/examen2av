@@ -34,7 +34,7 @@ public class StatusTwitter {
         Query query = new Query("#Cangas");
         QueryResult result = mitwitter.search(query);
         for (Status status : result.getTweets()) {
-            System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
+            System.out.println("@" + status.getUser().getScreenName() + ": " + status.getText());
         }
     }
 }
